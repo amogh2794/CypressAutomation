@@ -1,0 +1,23 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome --parallel",
+    "recordDashboardTest": "npm run test -- -- record --key bb4e4e8f-1e15-4362-8351-02387dc1e5f1 --reporter mochawesome"
+  },
+  "author": "AmoghVaidya",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "cypress": "^12.2.0"
+  },
+  "devDependencies": {
+    
+    "cypress-iframe": "^1.0.1"
+    
+  }
+}
